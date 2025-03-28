@@ -2,5 +2,7 @@
     "api_scheme": "https",
     "api_host": "api.spotify.com/v1",
     "api_port": "",
-    "api_prefix": "/"
+    "api_prefix": "/",
+    "client_id": "******************************",
+    "client_secret": "******************************"
 }

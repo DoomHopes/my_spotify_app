@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_spotify_app/views/settigns/settings_page.dart';
 import 'package:my_spotify_app/views/widgets/home_widgets/home_drawer.dart';
 import 'package:my_spotify_app/views/widgets/player_widgets/player_view.dart';
 import 'package:my_spotify_app/views/widgets/song_widgets/song_widget.dart';
@@ -20,7 +21,12 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('My Spotify App'),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingsPage()),
+              );
+            },
             icon: Icon(Icons.settings),
           ),
         ],
