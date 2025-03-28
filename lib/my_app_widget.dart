@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_spotify_app/services/helpers/snackbar_service.dart';
 import 'package:my_spotify_app/views/home/home_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'My Spotify App',
       theme: ThemeData.dark(),
       home: const MyHomePage(),
+      scaffoldMessengerKey: snackBarKey,
     );
   }
 }

@@ -32,8 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
                   child: SongWidget(
                     index: index,
                   ),
